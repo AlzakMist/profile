@@ -12,96 +12,94 @@
 </head>
 <body>
 
-<div class="board-bg" aria-hidden="true"></div>
-
 <nav class="topnav">
-  <span class="logo">K.</span>
+  <span class="wordmark">Kenshin</span>
   <div class="navlinks">
-    <a href="#about"><span class="ref">U1</span> About</a>
-    <a href="#skills"><span class="ref">U2</span> Skills</a>
-    <a href="#experience"><span class="ref">U3</span> Experience</a>
-    <a href="#projects"><span class="ref">U4</span> Projects</a>
-    <a href="#contact"><span class="ref">U5</span> Contact</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
   </div>
+  <a href="Oquiño-Resume.pdf" class="nav-resume" download>Resume ↓</a>
 </nav>
 
-<header class="hero" id="hero">
-  <p class="eyebrow">Christian Kenshin G. Oquiño · BS Information Technology · Jesus Reigns Christian College</p>
-  <h1>Kenshin</h1>
-  <p class="role-line">Building <span id="typed" class="typed"></span><span class="cursor">|</span></p>
-  <p class="hero-sub">I connect firmware, mobile apps, web platforms, and cloud backends into systems that run in the real world — most recently a wearable safety monitor for traffic enforcers, published in IJRSI.</p>
-  <div class="hero-actions">
-    <a href="#projects" class="btn btn-primary">View Projects</a>
-    <a href="Oquiño-Resume.pdf" class="btn btn-ghost" download>Download Resume</a>
-    <a href="https://github.com/AlzakMist" class="btn btn-ghost" target="_blank" rel="noopener">GitHub ↗</a>
+<header class="hero">
+  <p class="eyebrow">Christian Kenshin G. Oquiño — BS Information Technology, Jesus Reigns Christian College</p>
+  <h1 class="hero-name">Kenshin</h1>
+  <div class="ticker-line">
+    <span class="ticker-label">Building</span>
+    <div class="ticker-mask">
+      <ul class="ticker-list" id="tickerList">
+        <li>IoT systems</li>
+        <li>Flutter apps</li>
+        <li>web platforms</li>
+        <li>embedded firmware</li>
+      </ul>
+    </div>
   </div>
-  <p class="status-line"><span class="dot-live"></span> Currently: building the OCR document-scanner app, and graduating this August.</p>
+  <p class="hero-sub">A wearable safety monitor for traffic enforcers, published in IJRSI. A blockchain-backed student registry. An OCR app that reads IDs on sight. I work the full stack — sensors to servers — and I'm graduating this August.</p>
+  <div class="hero-actions">
+    <a href="#work" class="btn btn-fill">View Work</a>
+    <a href="#contact" class="btn btn-line">Get in Touch</a>
+  </div>
 </header>
 
-<div class="rail-wrap">
-  <div class="rail" id="rail">
-    <div class="rail-line"></div>
-    <div class="rail-signal" id="railSignal"></div>
-  </div>
+<main>
 
-  <div class="content">
-
-    <section class="section trace-node" id="about" data-ref="U1">
-      <div class="section-head">
-        <span class="ref-badge">U1</span>
-        <h2>About</h2>
+  <section class="section" id="about">
+    <span class="ghost-num">01</span>
+    <div class="section-inner">
+      <h2 class="section-title">About</h2>
+      <div class="section-grid">
+        <p class="lede">I'm an IT student graduating this August. Along the way I ended up working across the whole stack of a project by necessity — sensors and firmware on one end, Flutter or React apps in the middle, databases and cloud services on the other.</p>
+        <p>My capstone research, SmartVest, an IoT-based smart vest for traffic enforcer safety monitoring, was published in the International Journal of Research and Scientific Innovation. Outside of coursework I've picked up cybersecurity tooling on Kali Linux — Wireshark, Nmap, John the Ripper — and took part in CyberSecurity UMAK 2025. I run Arch Linux with KDE day to day, so I'm comfortable debugging environments, not just writing code inside them.</p>
       </div>
-      <div class="section-body">
-        <p>I'm an IT student graduating this August, and along the way I've ended up working across the whole stack of a project by necessity — sensors and firmware on one end, Flutter or React apps in the middle, databases and cloud services on the other. My capstone research, <strong>SmartVest</strong>, an IoT-based smart vest for traffic enforcer safety monitoring, was published in the International Journal of Research and Scientific Innovation (IJRSI).</p>
-        <p>Outside of coursework, I've picked up cybersecurity tooling on Kali Linux (Wireshark, Nmap, John the Ripper) and took part in CyberSecurity UMAK 2025. I also run Arch Linux with KDE day to day, so I'm comfortable debugging environments, not just writing code inside them.</p>
-        <div class="fact-grid">
-          <div class="fact"><span class="fact-num">4</span><span class="fact-label">Full-stack projects built end to end</span></div>
-          <div class="fact"><span class="fact-num">500</span><span class="fact-label">Hours across internship &amp; IT support roles</span></div>
-          <div class="fact"><span class="fact-num">6</span><span class="fact-label">Sensor modules integrated on SmartVest</span></div>
-        </div>
+      <div class="stat-row">
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label">Full-stack projects built end to end</span></div>
+        <div class="stat"><span class="stat-num">500</span><span class="stat-label">Hours across internship &amp; IT support</span></div>
+        <div class="stat"><span class="stat-num">6</span><span class="stat-label">Sensor modules on SmartVest</span></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section trace-node" id="skills" data-ref="U2">
-      <div class="section-head">
-        <span class="ref-badge">U2</span>
-        <h2>Skills</h2>
-      </div>
-      <div class="section-body">
-        <p class="hint">Click a component to see where it's used below.</p>
+  <section class="section" id="skills">
+    <span class="ghost-num">02</span>
+    <div class="section-inner">
+      <h2 class="section-title">Skills</h2>
+      <p class="hint">Select one to see where it's used in the work below.</p>
 
-        <div class="skill-group">
+      <div class="skill-columns">
+        <div class="skill-col">
           <h3>Languages &amp; Frameworks</h3>
           <div class="tags">
             <button class="tag" data-filter="">Java</button>
             <button class="tag" data-filter="">Python</button>
             <button class="tag" data-filter="">C++</button>
             <button class="tag" data-filter="smartvest ocr">Dart</button>
-            <button class="tag" data-filter="">HTML / CSS / JavaScript</button>
+            <button class="tag" data-filter="">HTML / CSS / JS</button>
             <button class="tag" data-filter="dental">Laravel</button>
             <button class="tag" data-filter="smartvest ocr">Flutter</button>
             <button class="tag" data-filter="blockchain">React</button>
             <button class="tag" data-filter="blockchain">Node.js</button>
             <button class="tag" data-filter="blockchain">Hyperledger Fabric</button>
-            <button class="tag" data-filter="blockchain">JWT Authentication</button>
-            <button class="tag" data-filter="smartvest">Arduino (Embedded C/C++)</button>
+            <button class="tag" data-filter="blockchain">JWT Auth</button>
+            <button class="tag" data-filter="smartvest">Arduino (C/C++)</button>
           </div>
         </div>
-
-        <div class="skill-group">
+        <div class="skill-col">
           <h3>IoT &amp; Hardware</h3>
           <div class="tags">
             <button class="tag" data-filter="smartvest">ESP32</button>
-            <button class="tag" data-filter="smartvest">MAX30102 — heart rate</button>
-            <button class="tag" data-filter="smartvest">MLX90614 — temperature</button>
-            <button class="tag" data-filter="smartvest">MPU-6050 — fall detection</button>
-            <button class="tag" data-filter="smartvest">MQ-135 — air quality</button>
-            <button class="tag" data-filter="smartvest">DHT22 — humidity</button>
-            <button class="tag" data-filter="smartvest">NEO-6M — GPS</button>
+            <button class="tag" data-filter="smartvest">MAX30102</button>
+            <button class="tag" data-filter="smartvest">MLX90614</button>
+            <button class="tag" data-filter="smartvest">MPU-6050</button>
+            <button class="tag" data-filter="smartvest">MQ-135</button>
+            <button class="tag" data-filter="smartvest">DHT22</button>
+            <button class="tag" data-filter="smartvest">NEO-6M GPS</button>
           </div>
         </div>
-
-        <div class="skill-group">
+        <div class="skill-col">
           <h3>Databases &amp; Cloud</h3>
           <div class="tags">
             <button class="tag" data-filter="">MySQL</button>
@@ -109,149 +107,175 @@
             <button class="tag" data-filter="smartvest">Firebase</button>
           </div>
         </div>
-
-        <div class="skill-group">
+        <div class="skill-col">
           <h3>Version Control &amp; DevOps</h3>
           <div class="tags">
-            <button class="tag" data-filter="">Git</button>
-            <button class="tag" data-filter="">GitHub</button>
+            <button class="tag" data-filter="">Git / GitHub</button>
             <button class="tag" data-filter="blockchain">Docker</button>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3>Cybersecurity Tools (Kali Linux)</h3>
-          <div class="tags">
             <button class="tag" data-filter="">Wireshark</button>
             <button class="tag" data-filter="">Nmap</button>
             <button class="tag" data-filter="">John the Ripper</button>
-            <button class="tag" data-filter="">File decoding tools</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section trace-node" id="experience" data-ref="U3">
-      <div class="section-head">
-        <span class="ref-badge">U3</span>
-        <h2>Experience</h2>
-      </div>
-      <div class="section-body">
-
-        <article class="exp-card">
-          <div class="exp-top">
-            <h3>Laravel Internship</h3>
-            <span class="exp-hours">300h</span>
-          </div>
-          <p class="exp-meta">Gleent Incorporated · 3 months</p>
-          <p>Quality assurance and ticket assessment alongside Laravel programming, and acted as team lead for co-interns.</p>
-        </article>
-
-        <article class="exp-card">
-          <div class="exp-top">
-            <h3>IT Support</h3>
-            <span class="exp-hours">200h</span>
-          </div>
-          <p class="exp-meta">Magellan Solutions · 2 months</p>
-          <p>Computer maintenance, troubleshooting, system administration, and ticketing.</p>
-        </article>
-
-      </div>
-    </section>
-
-    <section class="section trace-node" id="projects" data-ref="U4">
-      <div class="section-head">
-        <span class="ref-badge">U4</span>
-        <h2>Projects</h2>
-      </div>
-      <div class="section-body">
-
-        <article class="project-card" data-project="smartvest">
-          <div class="project-top">
-            <h3>SmartVest</h3>
-            <span class="project-status">Capstone · Published, IJRSI 2026</span>
-          </div>
-          <p>An IoT-based smart vest built to monitor the real-time health and environmental safety of traffic enforcers. Sensor data streams from an ESP32 to a Flutter app over Firebase, with automatic SOS alerts and GPS coordinates pushed to registered guardians and emergency responders the moment a reading crosses a safe threshold.</p>
-          <ul class="project-details">
-            <li>Heart rate, body temperature, fall detection, air quality, humidity, and GPS fused into one live dashboard with alert history</li>
-            <li>Guardian contact management with automatic SOS alerts, successfully demonstrated for real-time emergency detection</li>
-            <li>Capstone research project at Jesus Reigns Christian College, published in the International Journal of Research and Scientific Innovation</li>
-          </ul>
-          <div class="project-tags">
-            <span>ESP32</span><span>Flutter</span><span>Firebase</span><span>MAX30102</span><span>MLX90614</span><span>MPU-6050</span><span>MQ-135</span><span>DHT22</span><span>NEO-6M</span>
-          </div>
-        </article>
-
-        <article class="project-card" data-project="ocr">
-          <div class="project-top">
-            <h3>OCR App</h3>
-            <span class="project-status">Ongoing</span>
-          </div>
-          <p>A Flutter-based mobile app that scans IDs and passports to pull out structured data — name, document number, dates, nationality — instead of requiring manual entry.</p>
-          <ul class="project-details">
-            <li>Built on Flutter with Supabase Edge Functions and Google's Gemini API (gemini-2.5-flash), using schema-enforced outputs for reliable extraction</li>
-            <li>Server-side architecture keeps API keys protected and usage within free-tier quota limits</li>
-            <li>Currently building out the document-scanning pipeline as an MVP, collaborating with a co-founder via GitHub</li>
-          </ul>
-          <div class="project-tags">
-            <span>Flutter</span><span>Supabase Edge Functions</span><span>Gemini API</span>
-          </div>
-        </article>
-
-        <article class="project-card" data-project="blockchain">
-          <div class="project-top">
-            <h3>Blockchain-Based Student Registry System</h3>
-            <span class="project-status">Completed</span>
-          </div>
-          <p>A full-stack web application for secure, tamper-proof student record management backed by blockchain storage.</p>
-          <ul class="project-details">
-            <li>Role-based access control, cryptographic data integrity checks, and a blockchain audit trail logging every profile change</li>
-            <li>RESTful APIs with both web and CLI interfaces</li>
-            <li>Authentication secured with JWT and bcrypt encryption</li>
-            <li>Containerized with Docker for consistent local development and deployment</li>
-          </ul>
-          <div class="project-tags">
-            <span>React</span><span>Node.js</span><span>Hyperledger Fabric</span><span>JWT</span><span>bcrypt</span><span>Docker</span>
-          </div>
-        </article>
-
-        <article class="project-card" data-project="dental">
-          <div class="project-top">
-            <h3>Dental Clinic Web-Based Management System</h3>
-            <span class="project-status">Completed</span>
-          </div>
-          <p>A clinic management system covering patient records, appointment scheduling, and inventory tracking to streamline day-to-day clinic operations.</p>
-          <ul class="project-details">
-            <li>Secure admin authentication with a centralized dashboard for system control and monitoring</li>
-            <li>User-friendly interface designed for smooth navigation by clinic staff</li>
-          </ul>
-          <div class="project-tags">
-            <span>Laravel</span><span>Web App</span>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <section class="section trace-node" id="contact" data-ref="U5">
-      <div class="section-head">
-        <span class="ref-badge">U5</span>
-        <h2>Resume &amp; Contact</h2>
-      </div>
-      <div class="section-body">
-        <p>Open to internships and junior roles across mobile development, embedded systems, web development, or full-stack work.</p>
-        <div class="contact-grid">
-          <a href="Oquiño-Resume.pdf" class="btn btn-primary" download>Download Resume</a>
-          <button class="btn btn-ghost" id="copyEmail" data-email="ckenshin985@gmail.com">ckenshin985@gmail.com <span class="copy-hint">click to copy</span></button>
-          <button class="btn btn-ghost" id="copyPhone" data-phone="09922932862">0992 293 2862 <span class="copy-hint">click to copy</span></button>
-          <a href="https://github.com/AlzakMist" class="btn btn-ghost" target="_blank" rel="noopener">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/christian-kenshin-g-oqui%C3%B1o-212602379/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn ↗</a>
-        </div>
-      </div>
-    </section>
-
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>FLUTTER</span><span>ESP32</span><span>FIREBASE</span><span>REACT</span><span>SUPABASE</span><span>HYPERLEDGER FABRIC</span><span>ARDUINO</span><span>NODE.JS</span><span>DOCKER</span><span>LARAVEL</span>
+      <span>FLUTTER</span><span>ESP32</span><span>FIREBASE</span><span>REACT</span><span>SUPABASE</span><span>HYPERLEDGER FABRIC</span><span>ARDUINO</span><span>NODE.JS</span><span>DOCKER</span><span>LARAVEL</span>
+    </div>
   </div>
-</div>
+
+  <section class="section" id="experience">
+    <span class="ghost-num">03</span>
+    <div class="section-inner">
+      <h2 class="section-title">Experience</h2>
+      <div class="exp-list">
+        <div class="exp-row">
+          <div class="exp-when">300h</div>
+          <div class="exp-main">
+            <h3>Laravel Internship</h3>
+            <p class="exp-meta">Gleent Incorporated · 3 months</p>
+            <p>Quality assurance and ticket assessment alongside Laravel programming, and acted as team lead for co-interns.</p>
+          </div>
+        </div>
+        <div class="exp-row">
+          <div class="exp-when">200h</div>
+          <div class="exp-main">
+            <h3>IT Support</h3>
+            <p class="exp-meta">Magellan Solutions · 2 months</p>
+            <p>Computer maintenance, troubleshooting, system administration, and ticketing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="callout">
+    <p>Published in the <strong>International Journal of Research and Scientific Innovation</strong> — 2026</p>
+  </section>
+
+  <section class="section" id="work">
+    <span class="ghost-num">04</span>
+    <div class="section-inner">
+      <h2 class="section-title">Work</h2>
+
+      <div class="project-list">
+
+        <article class="project-row" data-project="smartvest">
+          <button class="project-summary" aria-expanded="false">
+            <span class="project-index">01</span>
+            <span class="project-name">SmartVest</span>
+            <span class="project-tagline">IoT safety monitoring for traffic enforcers</span>
+            <span class="project-status">Published, IJRSI 2026</span>
+            <span class="project-arrow">＋</span>
+          </button>
+          <div class="project-details-wrap">
+            <div class="project-details-inner">
+              <p>An IoT-based smart vest built to monitor the real-time health and environmental safety of traffic enforcers. Sensor data streams from an ESP32 to a Flutter app over Firebase, with automatic SOS alerts and GPS coordinates pushed to registered guardians the moment a reading crosses a safe threshold.</p>
+              <ul>
+                <li>Heart rate, body temperature, fall detection, air quality, humidity, and GPS fused into one live dashboard with alert history</li>
+                <li>Guardian contact management with automatic SOS alerts, demonstrated live for real-time emergency detection</li>
+                <li>Capstone research project at Jesus Reigns Christian College, published in IJRSI</li>
+              </ul>
+              <div class="project-tags">
+                <span>ESP32</span><span>Flutter</span><span>Firebase</span><span>MAX30102</span><span>MLX90614</span><span>MPU-6050</span><span>MQ-135</span><span>DHT22</span><span>NEO-6M</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-row" data-project="ocr">
+          <button class="project-summary" aria-expanded="false">
+            <span class="project-index">02</span>
+            <span class="project-name">OCR App</span>
+            <span class="project-tagline">Scans IDs &amp; passports into structured data</span>
+            <span class="project-status">Ongoing</span>
+            <span class="project-arrow">＋</span>
+          </button>
+          <div class="project-details-wrap">
+            <div class="project-details-inner">
+              <p>A Flutter-based mobile app that scans IDs and passports to pull out structured data — name, document number, dates, nationality — instead of requiring manual entry.</p>
+              <ul>
+                <li>Built on Flutter with Supabase Edge Functions and Google's Gemini API (gemini-2.5-flash), using schema-enforced outputs</li>
+                <li>Server-side architecture keeps API keys protected and usage within free-tier quota limits</li>
+                <li>Currently building the document-scanning pipeline as an MVP, collaborating with a co-founder via GitHub</li>
+              </ul>
+              <div class="project-tags">
+                <span>Flutter</span><span>Supabase Edge Functions</span><span>Gemini API</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-row" data-project="blockchain">
+          <button class="project-summary" aria-expanded="false">
+            <span class="project-index">03</span>
+            <span class="project-name">Student Registry</span>
+            <span class="project-tagline">Blockchain-backed, tamper-proof records</span>
+            <span class="project-status">Completed</span>
+            <span class="project-arrow">＋</span>
+          </button>
+          <div class="project-details-wrap">
+            <div class="project-details-inner">
+              <p>A full-stack web application for secure, tamper-proof student record management backed by blockchain storage.</p>
+              <ul>
+                <li>Role-based access control, cryptographic data integrity checks, and a blockchain audit trail logging every profile change</li>
+                <li>RESTful APIs with both web and CLI interfaces</li>
+                <li>Authentication secured with JWT and bcrypt encryption</li>
+                <li>Containerized with Docker for consistent local development and deployment</li>
+              </ul>
+              <div class="project-tags">
+                <span>React</span><span>Node.js</span><span>Hyperledger Fabric</span><span>JWT</span><span>bcrypt</span><span>Docker</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-row" data-project="dental">
+          <button class="project-summary" aria-expanded="false">
+            <span class="project-index">04</span>
+            <span class="project-name">Dental Clinic System</span>
+            <span class="project-tagline">Records, scheduling &amp; inventory in one dashboard</span>
+            <span class="project-status">Completed</span>
+            <span class="project-arrow">＋</span>
+          </button>
+          <div class="project-details-wrap">
+            <div class="project-details-inner">
+              <p>A clinic management system covering patient records, appointment scheduling, and inventory tracking to streamline day-to-day clinic operations.</p>
+              <ul>
+                <li>Secure admin authentication with a centralized dashboard for system control and monitoring</li>
+                <li>User-friendly interface designed for smooth navigation by clinic staff</li>
+              </ul>
+              <div class="project-tags">
+                <span>Laravel</span><span>Web App</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <span class="ghost-num">05</span>
+    <div class="section-inner">
+      <h2 class="section-title">Let's talk</h2>
+      <p class="lede">Open to internships and junior roles across mobile development, embedded systems, web development, or full-stack work.</p>
+      <div class="contact-list">
+        <button class="contact-link" id="copyEmail" data-email="ckenshin985@gmail.com">ckenshin985@gmail.com<span class="copy-hint">click to copy</span></button>
+        <button class="contact-link" id="copyPhone" data-phone="09922932862">0992 293 2862<span class="copy-hint">click to copy</span></button>
+        <a class="contact-link" href="https://github.com/AlzakMist" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/christian-kenshin-g-oqui%C3%B1o-212602379/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="contact-link" href="Oquiño-Resume.pdf" download>Download Resume ↓</a>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <footer class="site-footer">
   <p>Built by Kenshin.
