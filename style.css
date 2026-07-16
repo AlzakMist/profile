@@ -1,5 +1,5 @@
 :root {
-  --bg: #aeaead;
+  --bg: #d0d0cb;
   --bg-inverse: #131312;
   --text: #16161A;
   --text-soft: #6B6A66;
@@ -44,7 +44,7 @@ a { color: inherit; }
   justify-content: space-between;
   align-items: center;
   padding: 22px clamp(20px, 5vw, 64px);
-  background: rgba(244, 242, 238, 0.88);
+  background: rgba(239, 235, 228, 0.88);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
